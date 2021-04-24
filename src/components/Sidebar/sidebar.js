@@ -1,6 +1,5 @@
 //rafce
 import React from 'react';
-import Button from '../UI/Button/button';
 import {
 	SidebarContainer,
 	Icon,
@@ -9,6 +8,7 @@ import {
 	SidebarMenu,
 	SidebarLink,
 	SideBtnWrap,
+	SideBtnLink,
 } from './sidebar.styles';
 
 const Sidebar = ({ toggle, isOpen }) => {
@@ -33,9 +33,9 @@ const Sidebar = ({ toggle, isOpen }) => {
 					</SidebarLink>
 				</SidebarMenu>
 				<SideBtnWrap>
-					<Button onClick={toggle} to='/sign-in' sidebarPadding='true'>
+					<SideBtnLink onClick={toggle} to='/sign-in'>
 						Sign In
-					</Button>
+					</SideBtnLink>
 				</SideBtnWrap>
 			</SidebarWrapper>
 		</SidebarContainer>

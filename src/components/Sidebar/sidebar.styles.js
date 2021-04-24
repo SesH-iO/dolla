@@ -1,13 +1,13 @@
 import styled from 'styled-components';
 import { Link as LinkS } from 'react-scroll';
-// import { Link as LinkR } from 'react-router-dom';
+import { Link as LinkR } from 'react-router-dom';
 import { FaTimes } from 'react-icons/fa';
 
 export const SidebarContainer = styled.aside`
 	position: fixed;
 	z-index: 999;
 	width: 100%;
-	height: 100%;
+	height: 100vh;
 	background-color: #0d0d0d;
 	display: grid;
 	align-items: center;
@@ -72,4 +72,23 @@ export const SideBtnWrap = styled.div`
 	margin-top: 35px;
 `;
 
-// export const SidebarBtn = styled(LinkR)``;
+export const SideBtnLink = styled(LinkR)`
+	border-radius: 50px;
+	background-color: #01bf71;
+	white-space: nowrap;
+	padding: 16px 64px;
+	color: #fff;
+	font-size: 1rem;
+	font-weight: 500;
+	outline: none;
+	border: none;
+	cursor: pointer;
+	transition: all 0.2s ease-in-out;
+	text-decoration: none;
+
+	&:hover {
+		transition: all 0.2s ease-in-out;
+		background-color: #fff;
+		color: #010606;
+	}
+`;

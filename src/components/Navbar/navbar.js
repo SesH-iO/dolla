@@ -9,9 +9,8 @@ import {
 	NavItems,
 	NavLinks,
 	NavBtn,
+	NavBtnLink,
 } from './navbar.styles';
-
-import Button from '../UI/Button/button';
 
 const Navbar = ({ toggle }) => {
 	return (
@@ -39,7 +38,7 @@ const Navbar = ({ toggle }) => {
 						</NavItems>
 					</NavMenu>
 					<NavBtn>
-						<Button to='/sign-in'>Sign In</Button>
+						<NavBtnLink to='/sign-in'>Sign In</NavBtnLink>
 					</NavBtn>
 				</NavbarContainer>
 			</Nav>
