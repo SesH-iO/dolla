@@ -33,12 +33,17 @@ const Hero = () => {
 				</HeroP>
 				<HeroBtnWrapper>
 					<Button
-						to='sign-in'
+						to='sign-up'
 						onMouseEnter={onHoverHandler}
 						onMouseLeave={onHoverHandler}
 						primary='true'
 						color_d='true'
 						big_pad='true'
+						smooth={true}
+						duration={500}
+						spy={true}
+						offset={-80}
+						exact='true'
 					>
 						Get Started {hover ? <ArrForward /> : <ArrRight />}
 					</Button>
