@@ -7,7 +7,6 @@ export const Button = styled(Link)`
 	white-space: nowrap;
 	padding: ${({ big_pad }) => (big_pad ? '14px 48px' : '12px 30px')};
 	color: ${({ color_d }) => (color_d ? '#010606' : '#fff')};
-	/* color: ${({ colorDark }) => (colorDark ? '#fff' : '#010606')}; */
 	font-size: ${({ fontBig }) => (fontBig ? '20px' : '16px')};
 	font-weight: 500;
 	outline: none;
@@ -22,6 +21,5 @@ export const Button = styled(Link)`
 	&:hover {
 		transition: all 0.2s ease-in-out;
 		background-color: ${({ primary }) => (primary ? '#fff' : '#01bf71')};
-		/* color: ${({ colorDark }) => (colorDark ? '#010606' : '#fff')}; */
 	}
 `;

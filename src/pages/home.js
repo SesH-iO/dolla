@@ -7,6 +7,7 @@ import Sidebar from '../components/Sidebar/sidebar';
 import Hero from '../components/Hero/hero';
 import PageSection from '../components/PageSection/page-section';
 import Services from '../components/Services/services';
+import Footer from '../components/Footer/footer';
 
 const Home = () => {
 	const [isOpen, setIsOpen] = useState(false);
@@ -22,6 +23,7 @@ const Home = () => {
 			<PageSection {...homeData_02} />
 			<Services />
 			<PageSection {...homeData_03} />
+			<Footer />
 		</Fragment>
 	);
 };
