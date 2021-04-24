@@ -23,6 +23,7 @@ export const InfoWrapper = styled.div`
 export const InfoRow = styled.div`
 	display: grid;
 	grid-auto-columns: minmax(auto, 1fr);
+	grid-gap: 5%;
 	align-items: center;
 	grid-template-areas: ${({ imgStart }) => (imgStart ? `'col2 col1'` : `'col1 col2'`)};
 
@@ -88,6 +89,7 @@ export const BtnWrap = styled.div`
 export const ImgWrap = styled.div`
 	max-width: 555px;
 	height: 100%;
+	margin: 20px;
 `;
 
 export const Img = styled.img`

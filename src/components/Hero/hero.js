@@ -33,7 +33,7 @@ const Hero = () => {
 				</HeroP>
 				<HeroBtnWrapper>
 					<Button
-						to='sign-up'
+						to='sign-in'
 						onMouseEnter={onHoverHandler}
 						onMouseLeave={onHoverHandler}
 						primary='true'
